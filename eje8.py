@@ -24,9 +24,9 @@ def descuentos_segun_estado_edad_condicionales(caracter, edad):
     if (caracter.upper() == "S" or caracter.upper() == "C" or caracter.upper() == "V" or caracter.upper() == "D") and 0<edad:
         if edad>50:
             result = f"Para los {caracter} con la edad {edad}, se le aplicara un porcentaje de 8.5%"
-        elif caracter.upper()=="S" or caracter.upper()=="D" and edad<=35:
+        elif (caracter.upper()=="S" or caracter.upper()=="D") and edad<=35:
             result =f"Para los {caracter} con la edad {edad}, se le aplicara un porcentaje de 12%"
-        elif caracter.upper()=="V" or caracter.upper()=="C " and edad<=35:
+        elif (caracter.upper()=="V" or caracter.upper()=="C ") and edad<=35:
             result =f"Para los {caracter} con la edad {edad}, se le aplicara un porcentaje de 11.3%"
             
         else:
