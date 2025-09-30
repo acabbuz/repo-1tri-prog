@@ -3,7 +3,9 @@ def calcular_forma_triangulo(lado1, lado2, lado3):
 
     if lado1>=1 and lado2>=1 and lado3>=1:
         
-        if lado1 == lado2 ==lado3:
+        if ((lado1*lado1) + (lado2*lado2) == (lado3*lado3)) or ((lado2*lado2) + (lado3*lado3) == (lado1*lado1)) or ((lado1*lado1) + (lado3*lado3) == (lado2*lado2)):
+            result = "Triangulo de pitágoras"
+        elif lado1 == lado2 ==lado3:
             result = "Triángulo Equilatero"
         elif lado1 == lado2 or lado1 ==lado3 or lado2 ==lado3:
             result = "Triángulo Isosceles"
@@ -19,3 +21,4 @@ def calcular_forma_triangulo(lado1, lado2, lado3):
 print(calcular_forma_triangulo(2,2,4))
 print(calcular_forma_triangulo(1,2,4))
 print(calcular_forma_triangulo(2,2,2))
+print(calcular_forma_triangulo(3,4,5))
