@@ -60,13 +60,16 @@ def cobro_llamada(dia, turno, time):
         if turno == "manana" :
             impuesto = costo *0.15
             costo += impuesto
-        else:
+        elif turno == "tarde":
             impuesto = costo *0.10
             costo += impuesto
+        else:
+            costo = f"Algun dato invalido, "
 
     return costo
 
-print(cobro_llamada("domingo","mañana", 10))   
+print(cobro_llamada("domingo","manana", 10))   
 print(cobro_llamada("lunes","tarde",  12))  
-print(cobro_llamada("martes", "manaña", 13))  
+print(cobro_llamada("martes", "manana", 13))  
 print(cobro_llamada("miercoles", "tarde",16))  
+print(cobro_llamada("miercoles", "noche",16))  
