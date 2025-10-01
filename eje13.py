@@ -8,10 +8,12 @@ def contar_monedas():
     monedas_dos_cents =int(input("Monedas de dos centimos a contar: "))*2
     monedas_un_cents = int(input("Monedas de un centimos a contar: "))
 
-    result = (monedas_dos+ monedas_uno + monedas_cincuenta_cents + monedas_veinte_cents + monedas_diez_cents + monedas_cinco_cents + monedas_dos_cents + monedas_un_cents)/100
+    result = f"Tienes : {(monedas_dos+ monedas_uno + monedas_cincuenta_cents + monedas_veinte_cents + monedas_diez_cents + monedas_cinco_cents + monedas_dos_cents + monedas_un_cents)/100} €"
     
     return result
 
 print(contar_monedas())
+
+
 
 
